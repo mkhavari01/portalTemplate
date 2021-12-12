@@ -1,0 +1,24 @@
+@font-face {
+    font-family: AdobeArabic-Regular;
+    src: url(../fonts/AdobeArabic-Regular.otf);
+}
+
+@font-face {
+    font-family: Yekan;
+    src: url(../fonts/Yekan.ttf);
+}
+
+@font-face {
+    font-family: Entezar;
+    src: url(../fonts/EntezarD8_v2.0.1.ttf);
+}
+
+@font-face {
+    font-family: Dinar-light;
+    src: url(../fonts/Dinar/Mj_Dinar\ Two\ Light_0.ttf);
+}
+
+@font-face {
+    font-family: Dinar-medium;
+    src: url(../fonts/Dinar/Mj_Dinar\ Two\ Medium_0.ttf);
+}
