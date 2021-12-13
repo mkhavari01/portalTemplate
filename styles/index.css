@@ -1,8 +1,7 @@
 body {
-    display: flex;
     direction: rtl;
     overflow: auto;
-    font-family: Yekan;
+    font-family: IRANSans;
 }
 
 #sidebar {
@@ -17,13 +16,14 @@ body {
     font-family: Yekan;
     text-align: center;
     font-weight: 100;
-    padding: 10px;
+    padding: 2px;
     border: solid .5px #e7e6e6;
 }
 
 #sidebar .page-info {
     background: #faf7f7;
     border: solid .5px #e7e6e6 ;
+    border-top: none;
 }
 
 #sidebar .title h1{
@@ -51,6 +51,48 @@ body {
     padding: 15px 25% 20px 0;
 }
 
+#sidebar nav {
+    width: 100%;
+}
+
+#sidebar nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar nav ul li {
+    text-align: right;
+    border: solid 0.5px #e7e6e6;
+    padding: 10px 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+}
+
+#sidebar nav ul li img {
+    transform: rotate(270deg);
+}
+
+#sidebar nav ul li a {
+    text-decoration: none;
+    color: #000 ;
+}
+
+#sidebar nav ul li:nth-child(1) {
+    border-top: solid 0.5px #e7e6e6;
+}
+
+#sidebar nav div span {
+    padding: 0 15px;
+}
+
+#sidebar nav div {
+    padding: 40px 0 15px 0;
+    border-left: solid 0.5px #e7e6e6;
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -60,7 +102,70 @@ body {
 }
 
 #menu {
-    width: 80%;
-    background: sandybrown;
+    /* background: sandybrown; */
+    border: solid .5px #e7e6e6;
     height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: none;
+}
+
+#menu div .logo {
+    position: relative;
+}
+
+#menu div .logo .img-logo {
+    position: absolute;
+    right: -34px;
+    top: -14px;
+}
+
+#menu div .logo .fDots {
+    position: absolute;
+    right: 50px;
+    top: -5px;
+}
+
+#menu div .logo .pDots {
+    position: absolute;
+    right: 36px;
+    top: 34px;
+}
+
+#menu .account-status {
+    padding: 22px;
+}
+
+#menu .account-status a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 11px;
+    color: rgba(52,58,50,255);
+}
+
+#menu .account-status a:nth-child(1){
+    border-left: solid .5px gray;
+}
+
+#menu div div h1,h2 {
+    font-size: 14px;
+    margin: 0;
+    margin-right: 120px;
+    font-family: 'Dinar-medium';
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+#menu div div h2 {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: IRANSans;
+}
+
+
+#wrapper {
+    background: #efeeef;
+    padding: 30px;
+    overflow: hidden;
 }
