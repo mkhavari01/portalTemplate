@@ -169,3 +169,307 @@ body {
     padding: 30px;
     overflow: hidden;
 }
+
+#wrapper .container-holder {
+    display: flex;
+}
+
+.container {
+    background: #ffffff;
+    width: 550px;
+    border-top: solid 3px #0073e2;
+}
+
+.container div {
+    background: #f9f7f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.container div h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-right: 12px;
+    line-height: 26px;
+    font-family: Yekan;
+    margin: 9px 12px;
+}
+
+.container p {
+    color: #777c84;
+    font-size: 12px;
+    padding: 10px 20px;
+    padding: 0em 1.5em;
+    line-height: 1.7;
+}
+
+.container:nth-child(1){
+    width: 40%;
+    margin: 0 0 0 15px;
+}
+
+.container:nth-child(2){
+    width: 60%;
+}
+
+.container:nth-child(2) .title-holder {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.container:nth-child(2) .title-holder span {
+    font-size: 12px;
+    padding-left: 20px;
+    font-family: Yekan;
+}
+
+.container:nth-child(2) nav ul {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.container:nth-child(2) nav ul li {
+    padding: 10px 0;
+    border-bottom: solid .5px #e8e7e7;
+}
+
+.container:nth-child(2) nav ul li::before {
+    content: '';
+    transform: rotate(45deg);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #4fd5d9;
+}
+
+.container:nth-child(2) nav ul li a {
+    color: #5e6974;
+    text-decoration: none;
+    font-size: 12px;
+    transition: .4s;
+}
+
+.container:nth-child(2) nav ul li a:hover {
+    color: chocolate;
+    padding: 0 10px;
+}
+
+.info-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px 0;
+}
+
+.info-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.info-nav ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 7px;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    /* background: #0dbaa7; */
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.info-nav ul li span:nth-child(2){
+    font-size: 13px;
+    font-family: yekan;
+}
+
+.info-nav h3 {
+    margin: 0;
+    font-size: 16px;
+    width: 9%;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Yekan';
+}
+
+.info-nav ul li span span{
+    font-size: 10px;
+    margin: 0 3px;
+}
+
+.green {
+    background: #0ebba8;
+}
+
+.blue {
+    background: #367eb9;
+}
+
+.gray {
+    background: #6c757d;
+}
+
+#line-chart-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: white;
+    padding-right: 35px;
+    border-top: 3px #71e62e solid;
+}
+
+.chart-numbers {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.chart-numbers ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart-numbers ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 30px;
+}
+
+.chart-numbers ul li span:nth-child(1){
+    border-bottom: solid purple;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+#reports {
+    background: white;
+    margin: 10px 0;
+}
+
+#reports nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #faf7f9;
+    padding: 20px 0;
+}
+
+#reports nav h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 25px;
+}
+
+#reports nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#reports nav ul li {
+    padding: 0 20px;
+    border-left: solid 0.5px #80808099;
+    font-weight: 500;
+}
+
+#reports nav ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #848485;
+}
+
+#reports nav ul li .active {
+    color : #000;
+}
+
+#reports nav ul li:last-child {
+    border-left: none;
+}
+
+#reports section {
+    padding: 12px;
+}
+
+#reports section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/7);
+    background: #d3d3d3;
+}
+
+#reports section div img {
+    width: 125px;
+    height: 125px;
+    margin: 20px 0 15px 0;
+}
+
+#reports section div span:nth-child(2){
+    font-size: 14px;
+    margin: 7px 0;
+    font-weight: 500;
+    color: rgba(3,43,78,255);
+}
+
+#reports section div span:nth-child(3){
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(79,80,81,255);
+}
+
+#reports section div ul {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-family: IRANSans;
+    list-style: none;
+    margin: 10px 0 0 0;
+    width: 100%;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d3eeb9;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+#reports section div ul li {
+    color: rgba(3,43,78,255);
+    font-weight: 500;
+}
+
+#reports section div ul li span {
+    color: rgba(68,133,6,255);
+}
+
+#reports section div a {
+    color: rgba(3,43,78,255);
+    font-size: 12px;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bceeb9;
+}
