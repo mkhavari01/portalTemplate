@@ -362,6 +362,8 @@ body {
 #reports {
     background: white;
     margin: 10px 0;
+    border-top: solid 3px #22e674;
+    font-family: 'Yekan';
 }
 
 #reports nav {
@@ -407,6 +409,9 @@ body {
 
 #reports section {
     padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #reports section div {
@@ -416,6 +421,7 @@ body {
     align-items: center;
     width: calc(100%/7);
     background: #d3d3d3;
+    margin: 10px 0;
 }
 
 #reports section div img {
@@ -472,4 +478,15 @@ body {
     align-items: center;
     justify-content: center;
     background: #bceeb9;
+}
+
+#reports .section-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+    padding-bottom: 10px;
+}
+
+#reports .section-icon span {
+    margin: 0 10px;
 }
