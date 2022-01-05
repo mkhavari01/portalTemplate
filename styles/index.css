@@ -415,6 +415,7 @@ body {
 }
 
 #reports section div {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -435,12 +436,14 @@ body {
     margin: 7px 0;
     font-weight: 500;
     color: rgba(3,43,78,255);
+    padding: 0 5px;
 }
 
 #reports section div span:nth-child(3){
     font-size: 12px;
     font-weight: 400;
     color: rgba(79,80,81,255);
+    padding: 0 5px;
 }
 
 #reports section div ul {
@@ -478,6 +481,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #bceeb9;
+    flex: 1;
 }
 
 #reports .section-icon {
