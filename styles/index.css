@@ -499,3 +499,39 @@ body {
 .chart {
     margin: 10px 0 10px 40px;
 }
+
+.pie-charts {
+    display: flex;
+    background: white;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    border-top: solid 3px #22e6dc;
+}
+
+.pie-charts .pies-holder section{
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+.pie-charts .pies-holder section h4 {
+    margin: 20px 0 0 23px;
+    font-family: 'verdana';
+    letter-spacing: 1px;
+}
+
+.pie-charts .pies-holder section div {
+    display: flex;
+    align-items: center;
+}
+
+.pie-charts .pies-holder section div .pie-chart-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pie-charts .pies-holder section div span:last-child {
+    margin-top: 10px;
+}

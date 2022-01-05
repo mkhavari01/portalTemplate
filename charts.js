@@ -96,4 +96,152 @@ Highcharts.chart('bar-chart', {
             pointWidth: 30
         }
     },
+    
+});
+
+
+// pie-percentage
+
+Highcharts.chart('pie-percentage', {
+    credits: {
+        enabled: false
+    },
+    chart: {
+        height: 400,
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
+        }
+    },
+    series: [{
+        innerSize: '60%',
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Chrome',
+            y: 61.41,
+        }, {
+            name: 'Internet Explorer',
+            y: 11.84
+        }, {
+            name: 'Firefox',
+            y: 10.85
+        }, {
+            name: 'Edge',
+            y: 4.67
+        }, {
+            name: 'Safari',
+            y: 4.18
+        }, {
+            name: 'Sogou Explorer',
+            y: 1.64
+        }, {
+            name: 'Opera',
+            y: 1.6
+        }, {
+            name: 'QQ',
+            y: 1.2
+        }, {
+            name: 'Other',
+            y: 2.61
+        }]
+    }]
+});
+
+// pie percent 1
+
+Highcharts.chart('pie-percent', {
+    tooltip: {
+        enabled: false
+    },
+    credits: {
+        enabled: false
+    },
+    chart : {
+        type: 'pie',
+        height : 150,
+        width : 150
+    },
+    colors: ['#3aabf0', '#dcdcdc'],
+    title: {
+        text: '',
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: false
+            },
+            borderWidth: 3
+        }
+    },
+    series: [{
+        name: 'Browser share',
+        innerSize: '0',
+        data: [35.2,65.8],
+        states: {
+            hover: {
+                enabled: false
+            }
+        },
+    }],
+});
+
+// pie percent 2
+
+Highcharts.chart('pie-percent2', {
+    tooltip: {
+        enabled: false
+    },
+    credits: {
+        enabled: false
+    },
+    chart : {
+        type: 'pie',
+        height : 150,
+        width : 150
+    },
+    colors: ['#3aabf0', '#dcdcdc'],
+    title: {
+        text: '',
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: false
+            },
+            borderWidth: 3
+        },
+    },
+    series: [{
+        name: 'Browser share',
+        innerSize: '0',
+        data: [35.2,65.8],
+        states: {
+            hover: {
+                enabled: false
+            }
+        },
+    }],
+    
 });

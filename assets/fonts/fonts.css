@@ -61,3 +61,8 @@
   src: url('./IranianSans/IRANSans-Bold-web.eot?#iefix') format('eot'), url('../fonts/IranianSans/IRANSans-Bold-web.woff2') format('woff2'), url('../fonts/IranianSans/IRANSans-Bold-web.woff') format('woff'), url('../fonts/IranianSans/IRANSans-Bold-web.ttf') format('ttf');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: 'verdana';
+  src: url('./Verdana/verdana.ttf');
+}
