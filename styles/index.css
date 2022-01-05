@@ -490,3 +490,12 @@ body {
 #reports .section-icon span {
     margin: 0 10px;
 }
+
+.bar-chart-title {
+    font-size: 18px;
+    font-family: 'Yekan';
+}
+
+.chart {
+    margin: 10px 0 10px 40px;
+}
