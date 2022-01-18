@@ -111,7 +111,7 @@ Highcharts.chart('pie-percentage', {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
-        type: 'pie'
+        type: 'pie',
     },
     title: {
         text: ''
@@ -166,7 +166,8 @@ Highcharts.chart('pie-percentage', {
             name: 'Other',
             y: 2.61
         }]
-    }]
+    }],
+    
 });
 
 // pie percent 1
@@ -199,11 +200,11 @@ Highcharts.chart('pie-percent', {
         name: 'Browser share',
         innerSize: '0',
         data: [35.2,65.8],
-        states: {
-            hover: {
-                enabled: false
-            }
-        },
+        // states: {
+        //     hover: {
+        //         enabled: false
+        //     }
+        // },
     }],
 });
 
@@ -237,11 +238,9 @@ Highcharts.chart('pie-percent2', {
         name: 'Browser share',
         innerSize: '0',
         data: [35.2,65.8],
-        states: {
-            hover: {
-                enabled: false
-            }
-        },
+        // states: {
+        //     hover : false
+        // },
     }],
     
 });
