@@ -1,4 +1,4 @@
-Highcharts.chart('bar-chart', {
+const columnChart = Highcharts.chart('bar-chart', {
     // style : {
     //     color : 'white'
     // },
@@ -102,7 +102,7 @@ Highcharts.chart('bar-chart', {
 
 // pie-percentage
 
-Highcharts.chart('pie-percentage', {
+const pieChart = Highcharts.chart('pie-percentage', {
     credits: {
         enabled: false
     },
@@ -169,7 +169,6 @@ Highcharts.chart('pie-percentage', {
     }],
     
 });
-
 // pie percent 1
 
 Highcharts.chart('pie-percent', {
@@ -244,3 +243,8 @@ Highcharts.chart('pie-percent2', {
     }],
     
 });
+
+if(screen.width<600){
+    pieChart.setSize(screen.width-100)
+    columnChart.setSize(screen.width-100)
+}

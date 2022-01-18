@@ -622,3 +622,55 @@ body {
         border-left: solid 0.5px #80808099;
     }
 }
+
+@media screen and (max-width: 525px) {
+    .info-nav {
+        flex-direction: column;
+    }
+    .chart-numbers ul {
+        font-size: 11px;
+    }
+    #menu > div:nth-child(1) > div:nth-child(2) > h1 {
+        display: none;
+    }
+    #menu .account-status {
+        display: flex;
+        padding: 17px 0;
+    }
+    #reports nav {
+        flex-direction: column;
+    }
+    .container div {
+        flex-direction: column;
+        padding-top: 17px;
+    }
+    #wrapper > div.container-holder > div:nth-child(1) > div > h3 > br {
+        display: none;
+    }
+    .container:nth-child(2) nav ul li a {
+        font-size: 10px;
+    }
+    .info-nav ul li span:nth-child(2) {
+        font-size: 10px;
+    }
+    #wrapper > div:nth-child(2) > nav > h3 > br {
+        display: none;
+    }
+    .info-nav h3 {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .pie-charts .pies-holder section h4 {
+        font-size: 10px;
+    }
+    .pie-charts .pies-holder section div {
+        flex-direction: column;
+    }
+    .pie-charts .pies-holder section div .pie-chart-info {
+        align-items: center;
+        justify-content: center;
+    }
+    .pie-charts .pies-holder section {
+        text-align: center;
+    }
+}
